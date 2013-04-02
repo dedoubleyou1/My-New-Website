@@ -1,0 +1,19 @@
+auto:        true
+server:      true
+server_port: 4000
+url: 
+permalink: none
+navigation:
+- text: Illustration
+  url: /illustration/
+- text: Graphic Design
+  url: /graphicdesign/
+- text: Web Design
+  url: /web/
+- text: Game Design
+  url: /games/
+- text: Blog
+  url: /blog/
+- text: About Me
+  url: /about/
+  layout: post

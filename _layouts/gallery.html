@@ -1,0 +1,24 @@
+---
+layout: default
+templateStyle: gallery.css
+templateJS: gallery.js
+---
+
+<div class="page-header">
+  <h1 class="well">{{ page.title }} <small>{{ site.tagline }}</small></h1>
+</div>
+
+
+<ul class="sortable_fancybox_gallery_container">
+{% for pic in page.pictures %}
+ <li class="sortable_fancybox_gallery_image">
+   <a href="{{ pic.url }}" title="{{ pic.label }}">
+   		<img src="{{ pic.thumb }}" alt="image" />
+   </a>
+ </li>
+{% endfor %}
+</ul>
+
+<div>
+{{ content }}
+</div>

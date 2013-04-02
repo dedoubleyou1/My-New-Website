@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="content">
+  <div class="related">
+    <ul>
+      {% for post in site.posts %}
+      {% if post.categories contains page.portfolioType %}
+      <li>
+      	<a href="{{ post.url }}">
+	      	<h2>{{ post.title }}</h2>
+			<span>{{ post.date | date: "%B %e, %Y" }}</span>
+			<p>{{ post.summary }}</p>
+			<img src="{{ post.preview }}">
+		</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
